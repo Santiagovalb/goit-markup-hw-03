@@ -13,6 +13,7 @@
     --button-primary-hover: #188ce8;
     --logo-black: #000000;
     --text-white-opacity: #ffffff99;
+    --border-image: #E5E5E5;;
 
     --container-padding: calc((100% - 1200px) / 2);
 }
@@ -253,22 +254,20 @@ header nav .nav-menu .page {
     text-transform: capitalize;
 }
 
-.portfolio .menu li button:hover,
-.portfolio .menu li button.current {
-    color: var(--primary-white-color);
-    background-color: var(--accent-color);
-}
-
 .portfolio .cards {
     justify-content: space-between;
     flex-wrap: wrap;
 
     display: flex;
+    list-style: none;
+    
+    
 }
 
 .portfolio .cards li {
     margin-bottom: 20px;
     width: 360px;
+    border: 1px solid var(--border-image);
 }
 
 .portfolio .cards li a h2 {
@@ -280,6 +279,12 @@ header nav .nav-menu .page {
     color: var(--primary-text-color);
     font-size: 16px;
     padding: 15px;
+}
+
+.portfolio .menu li button:hover,
+.portfolio .menu li button.current {
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
 }
 
 /*----------- footer section ----------- */
